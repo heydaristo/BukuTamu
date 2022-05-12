@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BukuTamu</title>
     <style>
-        body {
-            background-color: #3498DB;
+        html {
+            background: url("logo/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
             font-family: 'Montserrat', sans-serif;
             text-align: center;
+        }
+        p {
+            color: white;
         }
         .text {
             font-size: 20px;
@@ -74,22 +80,18 @@
     </style>
 </head>
 <body>
-<div class="text">
     <h1>
             Gelar Karya SMKN 1 Sayung
-        </h1>
+    </h1>
     </div>
     <div class="container">
-        <img src="logo/logo1.png" alt="smkn1sayung">
-        <p>Silahkan Daftar dan Melihat Daftar 
-            <br>Dibawah Ini
-        </p>
+    <img src="logo/logo1.png" alt="smkn1sayung">
+    <p>Silahkan Daftar dan Melihat Daftar 
+    <br>Dibawah Ini</p>
     <a href="form-daftar.php">
-        <button class="btn fourth">Daftar</button>
-    </a>
+    <button class="btn fourth">Daftar</button></a>
     <a href="list-tamu.php">
-        <button class="btn fourth">Lihat Daftar</button>
-    </a>
+    <button class="btn fourth">Lihat Daftar</button></a>
     <?php if(isset($_GET['status'])): ?>
     <p>
         <?php

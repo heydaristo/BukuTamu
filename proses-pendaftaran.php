@@ -17,8 +17,6 @@ if(isset($_POST['kirim'])){
     } else {
         header('Location: index.php?status=gagal');
     }
-
-
 } else {
     die("Akses dilarang...");
 }
